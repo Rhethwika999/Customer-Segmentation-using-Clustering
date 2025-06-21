@@ -19,7 +19,7 @@ To identify distinct customer segments based on purchasing behavior using RFM (R
 
 * Interpret the resulting customer segments for business insights.
 
-### Dataset Details
+### Dataset Details 📈
 Source: https://www.kaggle.com/code/akramhussainkhan/time-series-analysis-for-retail-data/input
 
 Total Records: 541,909 rows × 8 columns
@@ -28,7 +28,7 @@ Total Records: 541,909 rows × 8 columns
 
 InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
-#### Preprocessing Steps:
+#### Preprocessing Steps 💹
 
 * Removed rows with null CustomerID or Description
 
@@ -41,7 +41,7 @@ InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID,
 ### Libraries & Packages Used
 numpy, pandas, matplotlib.pyplot, seaborn, datetime, sklearn.preprocessing, sklearn.cluster, sklearn.metrics
 
-### Inferences & Conclusion
+### Inferences & Conclusion 📊
 
 Best Number of Clusters: 3 (based on silhouette score and elbow method).
 

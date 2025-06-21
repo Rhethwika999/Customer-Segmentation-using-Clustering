@@ -38,7 +38,7 @@ InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID,
 
 * Standardized data for clustering
 
-### Libraries & Packages Used
+### Libraries & Packages Used 📦
 numpy, pandas, matplotlib.pyplot, seaborn, datetime, sklearn.preprocessing, sklearn.cluster, sklearn.metrics
 
 ### Inferences & Conclusion 📊

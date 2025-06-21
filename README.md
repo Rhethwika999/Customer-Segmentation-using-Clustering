@@ -1,67 +1,51 @@
 # Customer-Segmentation-using-Clustering 🧑‍🤝‍🧑
 
-🎯 Aim
+### Aim 🎯
 To identify distinct customer segments based on purchasing behavior using RFM (Recency, Frequency, Monetary) analysis. This segmentation helps an online retailer understand customer value and tailor marketing strategies effectively.
 
-✅ Objectives
-Perform Exploratory Data Analysis (EDA) on customer transaction data.
+### Objectives ✅
 
-Create RFM features for each customer.
+* Perform Exploratory Data Analysis (EDA) on customer transaction data.
 
-Clean and preprocess the dataset by handling missing values and outliers.
+* Create RFM features for each customer.
 
-Standardize features for clustering.
+* Clean and preprocess the dataset by handling missing values and outliers.
 
-Apply K-Means clustering to group customers based on purchasing patterns.
+* Standardize features for clustering.
 
-Identify optimal number of clusters using Elbow and Silhouette methods.
+* Apply K-Means clustering to group customers based on purchasing patterns.
 
-Interpret the resulting customer segments for business insights.
+* Identify optimal number of clusters using Elbow and Silhouette methods.
 
-📊 Dataset Details
+* Interpret the resulting customer segments for business insights.
+
+### Dataset Details
 Source: https://www.kaggle.com/code/akramhussainkhan/time-series-analysis-for-retail-data/input
 
 Total Records: 541,909 rows × 8 columns
 
-Columns:
+#### Columns:
 
-InvoiceNo, StockCode, Description, Quantity
+InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
-InvoiceDate, UnitPrice, CustomerID, Country
+#### Preprocessing Steps:
 
-Preprocessing Steps:
+* Removed rows with null CustomerID or Description
 
-Removed rows with null CustomerID or Description
+* Added new features: Amount, Recency, Frequency, Monetary
 
-Added new features: Amount, Recency, Frequency, Monetary
+* Treated outliers in RFM features
 
-Treated outliers in RFM features
+* Standardized data for clustering
 
-Standardized data for clustering
+### Libraries & Packages Used
+numpy, pandas, matplotlib.pyplot, seaborn, datetime, sklearn.preprocessing, sklearn.cluster, sklearn.metrics
 
-🧰 Libraries & Packages Used
-python
-Copy
-Edit
-# Core Libraries
-import numpy as np
-import pandas as pd
+### Inferences & Conclusion
 
-# Visualization
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Date & Time
-import datetime as dt
-
-# Scikit-learn for Preprocessing & Clustering
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
-📈 Inferences & Conclusion
 Best Number of Clusters: 3 (based on silhouette score and elbow method).
 
-Cluster Insights:
+#### Cluster Insights:
 
 Cluster 1: High-value customers with high transaction amounts and frequency — ideal for loyalty programs.
 
